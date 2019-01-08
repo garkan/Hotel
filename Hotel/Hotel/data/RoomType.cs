@@ -18,7 +18,7 @@ namespace Hotel.data
         private SingleRoom()
         {
         }
-        public readonly SingleRoom Instance = new SingleRoom();
+        public static readonly SingleRoom Instance = new SingleRoom();
     }
     class DoubleRoom : RoomType
     {
@@ -27,7 +27,7 @@ namespace Hotel.data
         private DoubleRoom()
         {
         }
-        public readonly DoubleRoom Instance = new DoubleRoom();
+        public static readonly DoubleRoom Instance = new DoubleRoom();
     }
     class TripleRoom : RoomType
     {
@@ -36,6 +36,6 @@ namespace Hotel.data
         private TripleRoom()
         {
         }
-        public readonly TripleRoom Instance = new TripleRoom();
+        public static readonly TripleRoom Instance = new TripleRoom();
     }
 }

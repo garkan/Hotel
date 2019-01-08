@@ -10,7 +10,13 @@ using System.Threading.Tasks;
 
 namespace Hotel
 {
-    class RoomExpert
+    interface IRoomExpert
+    {
+        Room Add(RoomType type, double cost_per_day, string path_to_img);
+        List<Room> Rooms { get; }
+        void Update();
+    }
+    class RoomExpert: IRoomExpert
     {
         public List<Room> rooms = new List<Room>();
         public static readonly RoomExpert Instance = new RoomExpert();
@@ -49,15 +55,15 @@ namespace Hotel
             }
         }
         public List<Room> Rooms => rooms;
-        public Room Add(Room room)
+        public Room Add(RoomType type, double cost_per_day, string path_to_img)
         {
+            int id = 1;
             if (rooms.Count > 0)
             {
-                var id = rooms.Select(r => r.id).Max() + 1;
-                room.id = id;
+                id = rooms.Select(r => r.id).Max() + 1;
+                
             }
-            else
-                room.id = 1;
+            var room = new Room(id, type,cost_per_day,path_to_img);
             rooms.Add(room);
             Update();
             return room;

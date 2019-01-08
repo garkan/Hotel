@@ -21,7 +21,7 @@ namespace Hotel
             currentUser = user;
         }
         User currentUser;
-        RoomDAO dao = RoomDAO.Instance;
+        RoomExpert dao = RoomExpert.Instance;
         Booker booker = Booker.Instance;
 
         private void BookingRoom_Load(object sender, EventArgs e)

@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 
 namespace Hotel
 {
-    class RoomDAO
+    class RoomExpert
     {
         public List<Room> rooms = new List<Room>();
-        public static readonly RoomDAO Instance = new RoomDAO();
+        public static readonly RoomExpert Instance = new RoomExpert();
         private const string path = "../../rooms.json";
-        private RoomDAO()
+        private RoomExpert()
         {
             if (File.Exists(path))
             {

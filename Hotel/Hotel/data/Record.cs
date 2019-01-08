@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,16 +26,18 @@ namespace Hotel.data
             this.amount = amount;
             this.agree = agree;
         }
-        public JObject ToJSON()
-        {
-            var result = new JObject();
-            result["id_user"] = id_user;
-            result["id_room"] = id_room;
-            result["datestart"] = datestart;
-            result["dateend"] = dateend;
-            result["amount"] = amount;
-            result["agree"] = agree;
-            return result;
-        }
+        //public JObject ToJSON()
+        //{
+        //    //var result = new JObject();
+        //    //result["id_user"] = id_user;
+        //    //result["id_room"] = id_room;
+        //    //result["datestart"] = datestart;
+        //    //result["dateend"] = dateend;
+        //    //result["amount"] = amount;
+        //    //result["agree"] = agree;
+        //    //return result;
+
+        //    JsonConvert.SerializeObject(this);
+        //}
     }
 }

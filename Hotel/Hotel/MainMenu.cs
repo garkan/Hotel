@@ -19,8 +19,6 @@ namespace Hotel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BookingRoom bookingRoom = new BookingRoom();
-            bookingRoom.Show();
         }
     }
 }

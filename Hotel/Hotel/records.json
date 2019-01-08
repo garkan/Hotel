@@ -1,0 +1,58 @@
+[
+  {
+    "id_user": 1,
+    "id_room": 1,
+    "datestart": "2019-01-08T19:16:33.4099477+05:00",
+    "dateend": "2019-01-09T19:16:33.4099477+05:00",
+    "amount": 1200.0,
+    "agree": false
+  },
+  {
+    "id_user": 1,
+    "id_room": 1,
+    "datestart": "2019-01-19T21:15:56",
+    "dateend": "2019-01-21T21:15:56",
+    "amount": 2400.0,
+    "agree": false
+  },
+  {
+    "id_user": 1,
+    "id_room": 1,
+    "datestart": "2019-01-14T21:17:34",
+    "dateend": "2019-01-16T21:17:34",
+    "amount": 2400.0,
+    "agree": false
+  },
+  {
+    "id_user": 1,
+    "id_room": 1,
+    "datestart": "2019-01-01T21:21:47",
+    "dateend": "2019-01-03T21:21:47",
+    "amount": 2400.0,
+    "agree": false
+  },
+  {
+    "id_user": 1,
+    "id_room": 1,
+    "datestart": "2019-01-04T21:23:17",
+    "dateend": "2019-01-05T21:23:17",
+    "amount": 1200.0,
+    "agree": false
+  },
+  {
+    "id_user": 1,
+    "id_room": 1,
+    "datestart": "2018-12-30T21:25:27",
+    "dateend": "2018-12-31T21:25:27",
+    "amount": 1200.0,
+    "agree": false
+  },
+  {
+    "id_user": 1,
+    "id_room": 2,
+    "datestart": "2019-01-16T21:31:29",
+    "dateend": "2019-01-31T21:31:29",
+    "amount": 21000.0,
+    "agree": false
+  }
+]

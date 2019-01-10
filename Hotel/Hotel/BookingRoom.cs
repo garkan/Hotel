@@ -83,7 +83,7 @@ namespace Hotel
                 {
                     try
                     {
-                        MessageBox.Show("Бронирование прошло успешно!");
+                        MessageBox.Show("Заявка на бронирование успешно создана!");
                         EmailSender.Send(res, currentUser, admin);
                     }
                     catch

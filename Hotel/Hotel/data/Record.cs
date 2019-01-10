@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.data
 {
-    class Record
+    public class Record
     {
         public int id;
         public int id_user;

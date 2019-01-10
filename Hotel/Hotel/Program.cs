@@ -17,7 +17,8 @@ namespace Hotel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BookingRoom(new data.Client(1, "abramov", "15625", "Абрамов А.К.", "dariast123test@gmail.com", "89088456362")));
+            Application.Run(new BookingRoom(new data.Client(1, "abramov", "15625", "Абрамов А.К.", "dariast123test@gmail.com", "89088456362"),
+                new EmailSender()));
         }
     }
 }

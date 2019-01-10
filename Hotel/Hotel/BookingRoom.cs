@@ -15,16 +15,19 @@ namespace Hotel
 {
     public partial class BookingRoom : Form
     {
-        public BookingRoom(Client user)
+        public BookingRoom(Client user, INotifier _notifier)
         {
             InitializeComponent();
             currentUser = user;
             admin = new Admin(Properties.Resources.AdminEmail, "");
+            notifier = _notifier;
+            
         }
         Client currentUser;
         Admin admin;
         IRoomExpert iroomexp = RoomExpert.Instance;
         Booker booker = Booker.Instance;
+        INotifier notifier;
 
         private void BookingRoom_Load(object sender, EventArgs e)
         {
@@ -84,7 +87,7 @@ namespace Hotel
                     try
                     {
                         MessageBox.Show("Заявка на бронирование успешно создана!");
-                        EmailSender.Send(res, currentUser, admin);
+                        notifier.Notify(res, currentUser, admin);
                     }
                     catch
                     {

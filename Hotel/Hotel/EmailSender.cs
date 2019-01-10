@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Hotel
 {
-    class EmailSender
+    class EmailSender: INotifier
     {
-        public static void Send(Record r, Client u, Admin a)
+        public void Notify(Record r, Client u, Admin a)
         {
             var emailUser = u.email;
             var email = Properties.Resources.Email;

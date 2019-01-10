@@ -56,11 +56,12 @@
       <DependentUpon>BookingRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="booking\Booker.cs" />
+    <Compile Include="data\Manager.cs" />
+    <Compile Include="data\Admin.cs" />
     <Compile Include="data\Record.cs" />
-    <Compile Include="data\Role.cs" />
     <Compile Include="data\Room.cs" />
     <Compile Include="data\RoomType.cs" />
-    <Compile Include="data\User.cs" />
+    <Compile Include="data\Client.cs" />
     <Compile Include="EmailSender.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

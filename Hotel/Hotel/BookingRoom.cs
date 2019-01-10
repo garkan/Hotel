@@ -15,12 +15,14 @@ namespace Hotel
 {
     public partial class BookingRoom : Form
     {
-        public BookingRoom(User user)
+        public BookingRoom(Client user)
         {
             InitializeComponent();
             currentUser = user;
+            admin = new Admin(Properties.Resources.AdminEmail, "");
         }
-        User currentUser;
+        Client currentUser;
+        Admin admin;
         IRoomExpert iroomexp = RoomExpert.Instance;
         Booker booker = Booker.Instance;
 
@@ -81,7 +83,8 @@ namespace Hotel
                 {
                     try
                     {
-                        EmailSender.Send(res, currentUser);
+                        MessageBox.Show("Бронирование прошло успешно!");
+                        EmailSender.Send(res, currentUser, admin);
                     }
                     catch
                     {

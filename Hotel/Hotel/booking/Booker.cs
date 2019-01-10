@@ -31,7 +31,7 @@ namespace Hotel.booking
             }
         }
         public static readonly Booker Instance = new Booker();
-        public Record Booking(User user, Room room, DateTime start, DateTime end)
+        public Record Booking(Client user, Room room, DateTime start, DateTime end)
         {
             var lst = records.Where(record =>
             {
@@ -43,11 +43,22 @@ namespace Hotel.booking
             else
             {
                 double amount = room.cost_per_day * (end.Subtract(start).TotalDays);
-                var record = new Record(user.id, room.id, start, end, amount, false);
-                records.Add(record);
-                Update();
-                return record;
+                return CreateRecord(user.id, room.id, start, end, amount, false);
             }
+        }
+ 
+        public Record CreateRecord(int id_user, int id_room, DateTime datestart, DateTime dateend, double amount, bool agree)
+        {
+            int id = 1;
+            if (records.Count > 0)
+            {
+                id = records.Select(r => r.id).Max() + 1;
+
+            }
+            var rec = new Record(id, id_user, id_room, datestart, dateend, amount, agree);
+            records.Add(rec);
+            Update();
+            return rec;
         }
         public void Update()
         {

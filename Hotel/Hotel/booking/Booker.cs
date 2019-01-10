@@ -69,7 +69,8 @@ namespace Hotel.booking
             var lst = records.Where(record =>
             {
                 return record.id_room==room.id && ((start >= record.datestart && start <= record.dateend) ||
-                (end >= record.datestart && end <= record.dateend));
+                (end >= record.datestart && end <= record.dateend)||
+                (start <= record.datestart && end >= record.dateend));
             });
             return (lst.Count() == 0);
         }

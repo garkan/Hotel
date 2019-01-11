@@ -32,7 +32,7 @@ namespace Hotel
 
             Message.Subject = "Заявка на бронирование";
             Message.Body = $"Номер брони: {r.id} \nДата заезда: {r.datestart.ToShortDateString()}" +
-                            $"\nДата выезда: {r.dateend.ToShortDateString()}\nНомер: {r.id_room}\nИтоговая стоимость: {r.amount}" +
+                            $"\nДата выезда: {r.dateend.ToShortDateString()}\nНомер: {r.id_room}\nИтоговая стоимость: {Math.Round(r.amount)}" +
                             $"\nОжидает подтверждения.";
             Smtp_Client.Send(Message);//непосредственно само отправление..
         }

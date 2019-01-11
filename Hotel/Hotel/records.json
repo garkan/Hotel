@@ -25,5 +25,32 @@
     "dateend": "2019-01-04T20:39:53",
     "amount": 2800.0,
     "agree": false
+  },
+  {
+    "id": 4,
+    "id_user": 1,
+    "id_room": 1,
+    "datestart": "2019-01-11T15:11:50.6502691+05:00",
+    "dateend": "2019-01-12T15:11:50",
+    "amount": 699.994731616088,
+    "agree": false
+  },
+  {
+    "id": 5,
+    "id_user": 1,
+    "id_room": 6,
+    "datestart": "2019-01-31T15:14:20",
+    "dateend": "2019-02-01T15:14:20",
+    "amount": 2100.0,
+    "agree": false
+  },
+  {
+    "id": 6,
+    "id_user": 1,
+    "id_room": 6,
+    "datestart": "2019-01-11T15:18:05.0589183+05:00",
+    "dateend": "2019-01-12T15:18:05",
+    "amount": 2099.9985679579859,
+    "agree": false
   }
 ]

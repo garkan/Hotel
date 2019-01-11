@@ -77,6 +77,7 @@ namespace Hotel
         {
             if (listView1.SelectedItems.Count > 0)
             {
+                button2.Enabled = false;
                 var t = listView1.SelectedIndices[0];
                 var t1 = listView1.Items[t];
                 var id = int.Parse(t1.SubItems[1].Text);
@@ -95,6 +96,8 @@ namespace Hotel
                     }
                     button1_Click(null, null);
                 }
+                button2.Enabled = true;
+
             }
         }
     }

@@ -125,8 +125,12 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Pictures\one_1.jpg" />
+    <Content Include="Pictures\one_2.jpg" />
     <Content Include="Pictures\phlogiston-hotel.jpg" />
     <Content Include="Pictures\r2.jpg" />
+    <Content Include="Pictures\three_1.jpg" />
+    <Content Include="Pictures\three_2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

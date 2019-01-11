@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace Hotel
 {
-    class EmailSender
+    class EmailSender: INotifier
     {
-        public static void Send(Record r, User u)
+        public void Notify(Record r, Client u, Admin a)
         {
             var emailUser = u.email;
             var email = Properties.Resources.Email;
             var password = Properties.Resources.Password;
-            var emailManager = Properties.Resources.ManagerEmail;
+            var emailManager = a.email;
             string smtpServer = "smtp.gmail.com";
             int port = 587;
             //Указываем SMTP сервер и авторизуемся.
@@ -31,7 +31,9 @@ namespace Hotel
             Message.To.Add(new MailAddress(emailManager));
 
             Message.Subject = "Заявка на бронирование";
-            Message.Body = "Заявка на бронирование на период: " + r.datestart.ToShortDateString() + ";" + r.dateend.ToShortDateString() + ".\nОжидает подтверждения.";
+            Message.Body = $"Номер брони: {r.id} \nДата заезда: {r.datestart.ToShortDateString()}" +
+                            $"\nДата выезда: {r.dateend.ToShortDateString()}\nНомер: {r.id_room}\nИтоговая стоимость: {r.amount}" +
+                            $"\nОжидает подтверждения.";
             Smtp_Client.Send(Message);//непосредственно само отправление..
         }
     }

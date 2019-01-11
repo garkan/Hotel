@@ -61,20 +61,20 @@ namespace Hotel.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на dariast123test@gmail.com.
+        ///   Ищет локализованную строку, похожую на st.dashck@yandex.ru.
         /// </summary>
-        internal static string Email {
+        internal static string AdminEmail {
             get {
-                return ResourceManager.GetString("Email", resourceCulture);
+                return ResourceManager.GetString("AdminEmail", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Ищет локализованную строку, похожую на dariast123test@gmail.com.
         /// </summary>
-        internal static string ManagerEmail {
+        internal static string Email {
             get {
-                return ResourceManager.GetString("ManagerEmail", resourceCulture);
+                return ResourceManager.GetString("Email", resourceCulture);
             }
         }
         

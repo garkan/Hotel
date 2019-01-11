@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nameService":  "Уборка номера",
+    "type": {
+      "FullName": "Уборка"
+    },
+    "cost": 500.0
+  },
+  {
+    "id": 2,
+    "nameService":  "Заказ такси",
+    "type": {
+      "FullName": "Такси"
+    },
+    "cost": 300.0
+  },
+  {
+    "id": 3,
+     "nameService":  "Завтрак",
+    "type": {
+      "FullName": "Еда"
+    },
+    "cost": 150.0
+  },
+  {
+    "id": 4,
+    "nameService":  "Обед",
+    "type": {
+      "FullName": "Еда"
+    },
+    "cost": 200.0
+  },
+   {
+    "id": 5,
+    "nameService":  "Ужин",
+    "type": {
+      "FullName": "Еда"
+    },
+    "cost": 250.0
+  }
+]

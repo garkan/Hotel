@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "id_product": 1,
+    "count": 10,
+    "criticalVolume": 3
+  },
+ {
+    "id": 2,
+    "id_product": 2,
+    "count": 2,
+    "criticalVolume": 5
+  },
+ {
+    "id": 3,
+    "id_product": 3,
+    "count": 4,
+    "criticalVolume": 7
+  },
+  {
+    "id": 4,
+    "id_product": 4,
+    "count": 16,
+    "criticalVolume": 8
+  },
+  {
+    "id": 5,
+    "id_product": 5,
+    "count": 12,
+    "criticalVolume": 5
+  }
+]

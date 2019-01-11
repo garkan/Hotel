@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "nameProduct": "Картошка",
+    "unit": "кг"
+  },
+ {
+    "id": 2,
+    "nameProduct": "Помидоры",
+    "unit": "кг"
+  },
+ {
+    "id": 3,
+    "nameProduct": "Колбаса",
+    "unit": "кг"
+  },
+ {
+    "id": 4,
+    "nameProduct": "Огурцы",
+    "unit": "кг"
+  },
+ {
+    "id": 5,
+    "nameProduct": "Вода",
+    "unit": "литр"
+  }
+]

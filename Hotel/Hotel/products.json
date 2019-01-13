@@ -1,27 +1,27 @@
 [
   {
     "id": 1,
-    "nameProduct": "Картошка",
+    "nameProduct": "Potatoes",
     "unit": "кг"
   },
  {
     "id": 2,
-    "nameProduct": "Помидоры",
+    "nameProduct": "Tomate",
     "unit": "кг"
   },
  {
     "id": 3,
-    "nameProduct": "Колбаса",
+    "nameProduct": "Sausage",
     "unit": "кг"
   },
  {
     "id": 4,
-    "nameProduct": "Огурцы",
+    "nameProduct": "Cucumbers",
     "unit": "кг"
   },
  {
     "id": 5,
-    "nameProduct": "Вода",
+    "nameProduct": "Water",
     "unit": "литр"
   }
 ]

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.data
 {
-    class Listproducts
+    public class Listproducts
     {
         public int id;
         public int id_products;

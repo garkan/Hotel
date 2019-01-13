@@ -8,12 +8,12 @@ namespace Hotel.data
 {
     class Products
     {
-        public int id;
+        public string id;
         public string nameProduct;
         public string unit;
        
 
-        public Products(int id, string nameProduct, string unit)
+        public Products(string id, string nameProduct, string unit)
         {
             this.id = id;
             this.nameProduct = nameProduct;

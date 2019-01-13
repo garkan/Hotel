@@ -30,5 +30,6 @@ namespace Hotel.eating
                 }
             }
         }
+        public static readonly Eater Instance = new Eater();
     }
 }

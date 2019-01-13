@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.data
 {
-    class Manager
+    public class Manager
     {
         public int id;
         public string email;

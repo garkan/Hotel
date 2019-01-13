@@ -9,11 +9,11 @@ namespace Hotel.data
     class OrderFood
     {
         public int id;
-        public int id_product;
+        public string id_product;
         public double count;
         public double criticalVolume;
 
-        public OrderFood(int id, int id_product, double count, double criticalVolume)
+        public OrderFood(int id, string id_product, double count, double criticalVolume)
         {
             this.id = id;
             this.id_product = id_product;

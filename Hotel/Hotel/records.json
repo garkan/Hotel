@@ -52,5 +52,14 @@
     "dateend": "2019-01-12T15:18:05",
     "amount": 2099.9985679579859,
     "agree": false
+  },
+  {
+    "id": 7,
+    "id_user": 1,
+    "id_room": 1,
+    "datestart": "2018-12-31T18:31:27",
+    "dateend": "2019-01-01T18:31:27",
+    "amount": 700.0,
+    "agree": false
   }
 ]

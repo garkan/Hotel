@@ -32,11 +32,23 @@ namespace Hotel
         private void BookingRoom_Load(object sender, EventArgs e)
         {
             
-            button1_Click(null, null);
+            button2.Enabled = false;
+            ShowFilteredRoom();
 
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            ShowFilteredRoom();
+        }
+        public List<Room> GetFreeFilteredRooms(bool _single, bool _double, bool _triple, DateTime start, DateTime end)
+        {
+            return iroomexp.Rooms.Where(r => (r.type is SingleRoom && _single) ||
+            (r.type is DoubleRoom && _double) || (r.type is TripleRoom && _triple))
+            .Where(t => (booker.CheckFree(start, end, t))).ToList(); 
+        }
+
+        private void ShowFilteredRoom()
         {
             var _single = checkBox1.Checked;
             var _double = checkBox2.Checked;
@@ -45,9 +57,8 @@ namespace Hotel
             var end = dateTimePicker2.Value;
 
             listView1.Items.Clear();
-            var result = iroomexp.Rooms.Where(r => (r.type is SingleRoom && _single) ||
-            (r.type is DoubleRoom && _double) || (r.type is TripleRoom && _triple))
-            .Where(t => (booker.CheckFree(start, end, t)));
+            var result = GetFreeFilteredRooms(_single, _double, _triple, start, end);
+           
 
             ImageList imgs = new ImageList();
             imgs.ImageSize = new Size(100, 100);
@@ -70,6 +81,7 @@ namespace Hotel
                 lvi.ImageIndex = i.Item2; // this will display YourImageList.Images[2] in the first column
                 listView1.Items.Add(lvi);
             }
+            button2.Enabled = true;
         }
 
 

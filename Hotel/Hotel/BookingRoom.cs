@@ -31,7 +31,7 @@ namespace Hotel
 
         private void BookingRoom_Load(object sender, EventArgs e)
         {
-            
+            dateTimePicker2.Value = dateTimePicker2.Value.AddDays(1);
             button2.Enabled = false;
             ShowFilteredRoom();
 
